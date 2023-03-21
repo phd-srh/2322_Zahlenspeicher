@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Zahlenspeicher {
 
     // Attribute
@@ -22,4 +24,13 @@ public class Zahlenspeicher {
         elementeImSpeicher++;
     }
 
+    public String anzeigen() {
+        String ausgabe = "[";
+        for (int i=0; i < elementeImSpeicher; i++) {
+            if (i > 0) ausgabe += ", ";
+            ausgabe += speicher[i];
+        }
+        ausgabe += "]";
+        return ausgabe;
+    }
 }

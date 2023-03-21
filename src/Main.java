@@ -11,5 +11,4 @@ public class Main {
         z.löscheLetzteZahl();
         System.out.println( z.anzeigen() );
     }
-
 }
