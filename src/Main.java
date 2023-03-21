@@ -8,7 +8,10 @@ public class Main {
         z.hinzufügen(21);
         System.out.println( z.anzeigen() );
 
-        z.löscheLetzteZahl();
+        z.löscheLetzteZahl(5);
+        System.out.println( z.anzeigen() );
+
+        z.hinzufügen(17);
         System.out.println( z.anzeigen() );
     }
 }
