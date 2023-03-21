@@ -14,5 +14,12 @@ public class Zahlenspeicher {
     }
 
     // Methoden
+    public void hinzufügen(int zahl) {
+        if (elementeImSpeicher >= kapazität)
+            return;
+
+        this.speicher[ elementeImSpeicher ] = zahl;
+        elementeImSpeicher++;
+    }
 
 }
