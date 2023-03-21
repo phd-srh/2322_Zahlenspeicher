@@ -24,6 +24,11 @@ public class Zahlenspeicher {
         elementeImSpeicher++;
     }
 
+    public void löscheLetzteZahl() {
+        if (elementeImSpeicher > 0)
+            elementeImSpeicher--;
+    }
+
     public String anzeigen() {
         String ausgabe = "[";
         for (int i=0; i < elementeImSpeicher; i++) {
